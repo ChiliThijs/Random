@@ -34,6 +34,7 @@
             this.magicDrop1 = new XmlCompare.MagicDrop();
             this.magicDrop2 = new XmlCompare.MagicDrop();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -57,7 +58,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Size = new System.Drawing.Size(824, 561);
-            this.splitContainer1.SplitterDistance = 274;
+            this.splitContainer1.SplitterDistance = 273;
             this.splitContainer1.TabIndex = 0;
             // 
             // treeView1
@@ -65,7 +66,7 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(274, 561);
+            this.treeView1.Size = new System.Drawing.Size(273, 561);
             this.treeView1.TabIndex = 0;
             // 
             // splitContainer2
@@ -83,8 +84,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.magicDrop2);
-            this.splitContainer2.Size = new System.Drawing.Size(546, 561);
-            this.splitContainer2.SplitterDistance = 274;
+            this.splitContainer2.Size = new System.Drawing.Size(547, 561);
+            this.splitContainer2.SplitterDistance = 327;
             this.splitContainer2.TabIndex = 0;
             // 
             // magicDrop1
@@ -93,7 +94,7 @@
             this.magicDrop1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.magicDrop1.Location = new System.Drawing.Point(0, 0);
             this.magicDrop1.Name = "magicDrop1";
-            this.magicDrop1.Size = new System.Drawing.Size(546, 274);
+            this.magicDrop1.Size = new System.Drawing.Size(547, 327);
             this.magicDrop1.TabIndex = 0;
             // 
             // magicDrop2
@@ -102,7 +103,7 @@
             this.magicDrop2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.magicDrop2.Location = new System.Drawing.Point(0, 0);
             this.magicDrop2.Name = "magicDrop2";
-            this.magicDrop2.Size = new System.Drawing.Size(546, 283);
+            this.magicDrop2.Size = new System.Drawing.Size(547, 230);
             this.magicDrop2.TabIndex = 0;
             // 
             // menuStrip1
@@ -113,17 +114,26 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Location = new System.Drawing.Point(0, 563);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(824, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 585);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "XmlInspector";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
@@ -143,6 +153,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private MagicDrop magicDrop1;
         private MagicDrop magicDrop2;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
 
