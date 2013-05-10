@@ -40,6 +40,7 @@
             this.tabControl1.Size = new System.Drawing.Size(471, 394);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.DragDrop += new System.Windows.Forms.DragEventHandler(this.TabControl_DragDrop);
+            this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
             // 
             // MagicDrop
             // 

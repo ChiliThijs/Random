@@ -6,9 +6,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace XmlCompare
 {
+
     public partial class MagicDrop : UserControl,IComponent
     {
         public MagicDrop()
@@ -58,6 +60,34 @@ namespace XmlCompare
             webBrowser.Navigate(new Uri(path));
             tabPage.Controls.Add(webBrowser);
             tabControl1.TabPages.Add(tabPage);
+            //tabControl1.TabPages[tabControl1.TabPages.Count - 1].Focus();
+            tabControl1.SelectedTab = tabPage;
+        }
+
+        private void tabControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                for (int x = 0; x < ((TabControl)sender).TabCount; x++ )
+                {
+                    if (tabControl1.GetTabRect(x).Contains(e.Location))
+                    {
+                        tabControl1.TabPages.RemoveAt(x);
+
+                    }
+                }
+            }
+        }
+
+        internal static void openTab()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void openTab(MagicDrop drop)
+        {
+
+          
         }
     }
 }
